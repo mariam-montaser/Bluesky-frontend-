@@ -1,0 +1,1051 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bluesky</title>
+    <!-- for reset padding & margin-->
+    <link rel="stylesheet" href="./css/normalize.css">
+    <!--for owl carousel-->
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+    <!--for responsive-->
+    <link rel="stylesheet" href="./css/grid.css">
+    <!--for cookie font-->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- for icons-->
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <!-- for icons-->
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
+
+    <script defer src="./js/jquery-3.3.1.min.js"></script>
+    <script defer src="./js/knockout.js"></script>
+    <script defer src="./js/owl.carousel.min.js"></script>
+    <script defer src="./js/main.js"></script>
+</head>
+
+<body>
+    <!--loading page-->
+    <div class="loading-page">
+        <div class="loading-img">
+            <img src="./images/preloader.gif" alt="loader">
+        </div>
+    </div>
+    <!--start header-->
+    <header>
+        <!--start navbar-->
+        <nav>
+            <div class="container-fluid">
+                <!--logo-->
+                <div class="logo">
+                    <img id="logo" src="./images/logo/logoDark.png" alt="logo">
+                </div>
+
+                <div class="nav-content">
+                    <div class="close"><i class="fa fa-close"></i></div>
+                    <!--menu-->
+                    <ul id="links" class="links upper unstyle">
+                        <li class="active">
+                            <a href="#" data-target="">home</a>
+                        </li>
+                        <li>
+                            <a href="#" data-target="about">aboutUs</a>
+                        </li>
+                        <li>
+                            <a href="#" data-target="menu">menu</a>
+                        </li>
+                        <li>
+                            <a href="#" data-target="contact">contact</a>
+                        </li>
+                    </ul>
+                    <div class="social">
+                        <i class="fa fa-facebook"></i>
+                        <i class="fa fa-twitter"></i>
+                        <i class="fa fa-pinterest"></i>
+                        <i class="fa fa-instagram"></i>
+                    </div>
+                    <!--for search-->
+                    <div class="search">
+                        <a href="#" class="search-icon" data-pop="search-box"><i class="fa fa-search"></i></a>
+                    </div>
+
+                    <!--booking button-->
+                    <a href="#" data-target="reservation" class="book btn">reservation</a>
+                    <button class="book pop btn" data-popup="login-box">sign up/login</button>
+                </div>
+
+                <!--navbar button for small screen-->
+                <div class="nav-menu">
+                    <span></span><span></span><span></span>
+                </div>
+                <div class="slide hidden">
+                    <ul class="links upper unstyle">
+                        <li class="active">
+                            <a href="#" data-target="">home</a>
+                        </li>
+                        <li>
+                            <a href="#" data-target="about">about us</a>
+                        </li>
+                        <li>
+                            <a href="#" data-target="menu">menu</a>
+                        </li>
+                        <li>
+                            <a href="#" data-target="contact">contact</a>
+                        </li>
+                    </ul>
+                    <div class="social">
+                        <i class="fa fa-facebook"></i>
+                        <i class="fa fa-twitter"></i>
+                        <i class="fa fa-pinterest"></i>
+                        <i class="fa fa-instagram"></i>
+                    </div>
+
+                    <a class="btn" data-target="reservation">reservation</a>
+                    <button class="btn">sign up/login</button>
+                </div>
+            </div>
+        </nav>
+        <div class="clear"></div>
+        <!--end navbar-->
+
+        <!--start side bar-->
+        <div class="side-bar center">
+            <div class="side-content">
+                <p>0123456789</p>
+                <ul class="unstyle social-icons">
+                    <li><i class="fa fa-facebook"></i></li>
+                    <li><i class="fa fa-twitter"></i></li>
+                    <li><i class="fa fa-pinterest"></i></li>
+                    <li><i class="fa fa-instagram"></i></li>
+                </ul>
+            </div>
+        </div>
+        <!--end side bar-->
+
+        <!-- start slider -->
+        <div class="slider">
+            <div class="slider-slide slide1 show">
+                <div class="slide-content">
+                    <div class="container">
+                        <div class="text-holder">
+                            <h3 class="colored">spicy &amp; delicious</h3>
+                            <h1 class="upper">bluesky</h1>
+                            <p class="upper">restaurant of your city</p>
+                            <button class="btn">book a table</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-slide slide2">
+                <div class="slide-content">
+                    <div class="container">
+                        <div class="text-holder">
+                            <h3 class="colored">spicy &amp; delicious</h3>
+                            <h1 class="upper">bluesky</h1>
+                            <p class="upper">restaurant of your city</p>
+                            <button class="btn">order delivery</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end slider -->
+    </header>
+    <!--end header-->
+
+    <!--start about-->
+    <div id="about" class="block about">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="about-img">
+                        <img src="./images/story.jpg" alt="about us">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="about-text">
+                        <h3 class="colored">Welcome to Bluesky</h3>
+                        <h2 class="h1">DESCOVER OUR STORY</h2>
+                        <p>khadok is a restaurant, and coffee roastery located on a busy corner site in Farringdon’s
+                            Exmouth Market. With glazed frontage on two sides of the building, overlooking the market
+                            and a bustling London intersec.</p>
+                        <p>Bluesky is the place for a fine dining experience where the tradition is blended with an
+                            imaginative and modern twist.</p>
+                        <a href="#" class="btn">read more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end about-->
+    <div class="clear"></div>
+
+    <!--start statistics-->
+    <div class="stat center">
+        <div class="over-layer padding">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-3">
+                        <i class="fa fa-cutlery"></i>
+                        <h2>10222</h2>
+                        <p>menu</p>
+                    </div>
+                    <div class="col-md-3">
+                        <i class="fa fa-heart"></i>
+                        <h2>65200</h2>
+                        <p>top rated</p>
+                    </div>
+                    <div class="col-md-3">
+                        <i class="fa fa-users"></i>
+                        <h2>15642</h2>
+                        <p>happy customers</p>
+                    </div>
+                    <div class="col-md-3">
+                        <i class="fa fa-home"></i>
+                        <h2>10</h2>
+                        <p>branches</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end statistics-->
+
+    <div class="clear"></div>
+
+    <!-- start recommendation -->
+    <section class="recommendation padding center">
+        <div class="rec-intro">
+            <h3 class="colored">our</h3>
+            <h2 class="h1">recommendation</h2>
+        </div>
+        <div class="gallery">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="master">
+                            <div id="meal-label" class="meal-label upper">breakfast</div>
+                            <i class="fa fa-chevron-left fa-lg"></i>
+                            <i class="fa fa-chevron-right fa-lg"></i>
+                            <img src="./images/menu/breakfast/break_4.jpg" alt="recommended1" />
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="thumbnails">
+                            <img class="selected" src="./images/menu/breakfast/break_4.jpg" alt="recommended1"
+                                title="breakfast" />
+                            <img src="./images/menu/lunch/L_3.jpg" alt="recommended2" title="lunch" />
+                            <img src="./images/menu/dinner/din_4.jpg" alt="recommended3" title="dinner" />
+                            <img src="./images/menu/dessert/dess_2.jpg" alt="recommended4" title="dessert" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end recommendation -->
+
+    <!--start menu-->
+    <section id="menu" class="block menus">
+        <div class="intro">
+            <div class="over-layer padding">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="title">
+                                <h3 class="colored">our menus</h3>
+                                <h2 class="h1">menu of the day</h2>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <button class="btn">download pdf</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+        <div class="menu-details">
+            <ul class="menu-name unstyle upper center hidden">
+                <li data-class="lunch" class="selected">
+                    <i class="fa fa-cutlery fa-lg"></i>
+                    <span>lunch</span>
+                </li>
+                <li data-class="dinner">
+                    <i class="fa fa-birthday-cake fa-lg"></i>
+                    <span>dinner</span>
+                </li>
+                <li data-class="breakfast">
+                    <i class="fa fa-tachometer fa-lg"></i>
+                    <span>breakfast</span>
+                </li>
+                <li data-class="dessert">
+                    <i class="fa fa-coffee fa-lg"></i>
+                    <span>dessert</span>
+                </li>
+            </ul>
+            <div class="menu-description">
+                <div class="meals">
+                    <div class="meal-title">
+                        <a data-class="lunch" class="selected" href="#lunch">
+                            <i class="fa fa-cutlery fa-lg"></i>
+                            <span>lunch</span>
+                        </a>
+                    </div>
+
+
+
+                    <div id="lunch" class="lunch meal select">
+                        <div class="row">
+                            <div class="part right col-md-6">
+                                <div class="meal1 row">
+                                    <div class="col-md-4 col-sm-6">
+                                        <div class="meal-img">
+                                            <img src="./images/menu/lunch/L_1.jpg" alt="Lunch Complete">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8 col-sm-6">
+                                        <div class="meal-details">
+                                            <h2>Lunch Complete</h2>
+                                            <p>There is a rich diversity in food</p>
+                                            <span>&#36; 20</span><button class="btn">Order</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="meal1 row">
+                                    <div class="col-md-4 col-sm-6">
+                                        <div class="meal-img">
+                                            <img src="./images/menu/lunch/L_2.jpg" alt="Crepe Complete">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8 col-sm-6">
+                                        <div class="meal-details">
+                                            <h2>Crepe Complete</h2>
+                                            <p>There is a rich diversity in food</p>
+                                            <span>&#36; 20</span><button class="btn">Order</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="meal1 row">
+                                    <div class="col-md-4 col-sm-6">
+                                        <div class="meal-img">
+                                            <img src="./images/menu/lunch/L_3.jpg" alt="Vegetarian Lunch">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8 col-sm-6">
+                                        <div class="meal-details">
+                                            <h2>Vegetarian Lunch</h2>
+                                            <p>There is a rich diversity in food</p>
+                                            <span>&#36; 20</span><button class="btn">Order</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="part left col-md-6">
+                                <div class="meal1 row">
+                                    <div class="col-md-4 col-sm-6">
+                                        <div class="meal-img">
+                                            <img src="./images/menu/lunch/L_4.jpg" alt="Eggs Benedict">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8 col-sm-6">
+                                        <div class="meal-details">
+                                            <h2>Eggs Benedict</h2>
+                                            <p>There is a rich diversity in food</p>
+                                            <span>&#36; 25</span><button class="btn">Order</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="meal1 row">
+                                    <div class="col-md-4 col-sm-6">
+                                        <div class="meal-img">
+                                            <img src="./images/menu/lunch/L_5.jpg" alt="English Lunch">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8 col-sm-6">
+                                        <div class="meal-details">
+                                            <h2>English Lunch</h2>
+                                            <p>There is a rich diversity in food</p>
+                                            <span>&#36; 25</span><button class="btn">Order</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="meal1 row">
+                                    <div class="col-md-4 col-sm-6">
+                                        <div class="meal-img">
+                                            <img src="./images/menu/lunch/L_6.jpg" alt="Barrel's Lunch">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8 col-sm-6">
+                                        <div class="meal-details">
+                                            <h2>Barrel's Lunch</h2>
+                                            <p>There is a rich diversity in food</p>
+                                            <span>&#36; 25</span><button class="btn">Order</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="meal-title">
+                        <a data-class="dinner" href="#dinner">
+                            <i class="fa fa-birthday-cake fa-lg"></i>
+                            <span>dinner</span>
+                        </a>
+                    </div>
+                    <div id="dinner" class="dinner meal">
+                        <div class="row">
+                            <div class="part right col-md-6">
+                                <div class="meal1 row">
+                                    <div class="col-md-4 col-sm-6">
+                                        <div class="meal-img">
+                                            <img src="./images/menu/dinner/din_1.jpg" alt="Lunch Complete">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8 col-sm-6">
+                                        <div class="meal-details">
+                                            <h2>dinner Complete</h2>
+                                            <p>There is a rich diversity in food</p>
+                                            <span>&#36; 26</span><button class="btn">Order</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="meal1 row">
+                                    <div class="col-md-4 col-sm-6">
+                                        <div class="meal-img">
+                                            <img src="./images/menu/dinner/din_2.jpg" alt="Crepe Complete">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8 col-sm-6">
+                                        <div class="meal-details">
+                                            <h2>Crepe Complete</h2>
+                                            <p>There is a rich diversity in food</p>
+                                            <span>&#36; 20</span><button class="btn">Order</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="meal1 row">
+                                    <div class="col-md-4 col-sm-6">
+                                        <div class="meal-img">
+                                            <img src="./images/menu/dinner/din_3.jpg" alt="Vegetarian Lunch">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8 col-sm-6">
+                                        <div class="meal-details">
+                                            <h2>Vegetarian dinner</h2>
+                                            <p>There is a rich diversity in food</p>
+                                            <span>&#36; 25</span><button class="btn">Order</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="part left col-md-6">
+                                <div class="meal1 row">
+                                    <div class="col-md-4 col-sm-6">
+                                        <div class="meal-img">
+                                            <img src="./images/menu/dinner/din_4.jpg" alt="Eggs Benedict">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8 col-sm-6">
+                                        <div class="meal-details">
+                                            <h2>Eggs Benedict</h2>
+                                            <p>There is a rich diversity in food</p>
+                                            <span>&#36; 35</span><button class="btn">Order</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="meal1 row">
+                                    <div class="col-md-4 col-sm-6">
+                                        <div class="meal-img">
+                                            <img src="./images/menu/dinner/din_5.jpg" alt="English Lunch">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8 col-sm-6">
+                                        <div class="meal-details">
+                                            <h2>English dinner</h2>
+                                            <p>There is a rich diversity in food</p>
+                                            <span>&#36; 35</span><button class="btn">Order</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="meal1 row">
+                                    <div class="col-md-4 col-sm-6">
+                                        <div class="meal-img">
+                                            <img src="./images/menu/dinner/L_6.jpg" alt="Barrel's Lunch">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8 col-sm-6">
+                                        <div class="meal-details">
+                                            <h2>Barrel's dinner</h2>
+                                            <p>There is a rich diversity in food</p>
+                                            <span>&#36; 45</span><button class="btn">Order</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="meal-title">
+                        <a data-class="breakfast" href="#breakfast">
+                            <i class="fa fa-tachometer fa-lg"></i>
+                            <span>breakfast</span>
+                        </a>
+                    </div>
+                    <div id="breakfast" class="breakfast meal">
+                        <div class="row">
+                            <div class="part right col-md-6">
+                                <div class="meal1 row">
+                                    <div class="col-md-4 col-sm-6">
+                                        <div class="meal-img">
+                                            <img src="./images/menu/breakfast/break_5.jpg" alt="Lunch Complete">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8 col-sm-6">
+                                        <div class="meal-details">
+                                            <h2>breakfast Complete</h2>
+                                            <p>There is a rich diversity in food</p>
+                                            <span>&#36; 19</span><button class="btn">Order</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="meal1 row">
+                                    <div class="col-md-4 col-sm-6">
+                                        <div class="meal-img">
+                                            <img src="./images/menu/breakfast/break_1.jpg" alt="Crepe Complete">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8 col-sm-6">
+                                        <div class="meal-details">
+                                            <h2>Crepe Complete</h2>
+                                            <p>There is a rich diversity in food</p>
+                                            <span>&#36; 16</span><button class="btn">Order</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="meal1 row">
+                                    <div class="col-md-4 col-sm-6">
+                                        <div class="meal-img">
+                                            <img src="./images/menu/breakfast/break_3.jpg" alt="Vegetarian Lunch">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8 col-sm-6">
+                                        <div class="meal-details">
+                                            <h2>Vegetarian breakfast</h2>
+                                            <p>There is a rich diversity in food</p>
+                                            <span>&#36; 12</span><button class="btn">Order</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="part left col-md-6">
+                                <div class="meal1 row">
+                                    <div class="col-md-4 col-sm-6">
+                                        <div class="meal-img">
+                                            <img src="./images/menu/breakfast/break_2.jpg" alt="Eggs Benedict">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8 col-sm-6">
+                                        <div class="meal-details">
+                                            <h2>Eggs Benedict</h2>
+                                            <p>There is a rich diversity in food</p>
+                                            <span>&#36; 18</span><button class="btn">Order</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="meal1 row">
+                                    <div class="col-md-4 col-sm-6">
+                                        <div class="meal-img">
+                                            <img src="./images/menu/breakfast/break_4.jpg" alt="English Lunch">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8 col-sm-6">
+                                        <div class="meal-details">
+                                            <h2>English breakfast</h2>
+                                            <p>There is a rich diversity in food</p>
+                                            <span>&#36; 13</span><button class="btn">Order</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="meal1 row">
+                                    <div class="col-md-4 col-sm-6">
+                                        <div class="meal-img">
+                                            <img src="./images/menu/breakfast/break_6.jpg" alt="Barrel's Lunch">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8 col-sm-6">
+                                        <div class="meal-details">
+                                            <h2>Barrel's breakfast</h2>
+                                            <p>There is a rich diversity in food</p>
+                                            <span>&#36; 15</span><button class="btn">Order</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="meal-title">
+                        <a data-class="dessert" href="#dessert">
+                            <i class="fa fa-coffee fa-lg"></i>
+                            <span>dessert</span>
+                        </a>
+                    </div>
+                    <div id="dessert" class="capital dessert meal">
+                        <div class="row">
+                            <div class="part right col-md-6">
+                                <div class="meal1 row">
+                                    <div class="col-md-4 col-sm-6">
+                                        <div class="meal-img">
+                                            <img src="./images/menu/dessert/dess_1.jpg" alt="Lunch Complete">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8 col-sm-6">
+                                        <div class="meal-details">
+                                            <h2>dessert Complete</h2>
+                                            <p>There is a rich diversity in food</p>
+                                            <span>&#36; 10</span><button class="btn">Order</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="meal1 row">
+                                    <div class="col-md-4 col-sm-6">
+                                        <div class="meal-img">
+                                            <img src="./images/menu/dessert/dess_2.jpg" alt="Crepe Complete">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8 col-sm-6">
+                                        <div class="meal-details">
+                                            <h2>Crepe Complete</h2>
+                                            <p>There is a rich diversity in food</p>
+                                            <span>&#36; 22</span><button class="btn">Order</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="meal1 row">
+                                    <div class="col-md-4 col-sm-6">
+                                        <div class="meal-img">
+                                            <img src="./images/menu/dessert/dess_3.jpg" alt="Vegetarian Lunch">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8 col-sm-6">
+                                        <div class="meal-details">
+                                            <h2>Vegetarian dessert</h2>
+                                            <p>There is a rich diversity in food</p>
+                                            <span>&#36; 20</span><button class="btn">Order</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="part left col-md-6">
+                                <div class="meal1 row">
+                                    <div class="col-md-4 col-sm-6">
+                                        <div class="meal-img">
+                                            <img src="./images/menu/dessert/dess_4.jpg" alt="Eggs Benedict">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8 col-sm-6">
+                                        <div class="meal-details">
+                                            <h2>Eggs Benedict</h2>
+                                            <p>There is a rich diversity in food</p>
+                                            <span>&#36; 18</span><button class="btn">Order</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="meal1 row">
+                                    <div class="col-md-4 col-sm-6">
+                                        <div class="meal-img">
+                                            <img src="./images/menu/dessert/dess_5.jpg" alt="English Lunch">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8 col-sm-6">
+                                        <div class="meal-details">
+                                            <h2>English dessert</h2>
+                                            <p>There is a rich diversity in food</p>
+                                            <span>&#36; 15</span><button class="btn">Order</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="meal1 row">
+                                    <div class="col-md-4 col-sm-6">
+                                        <div class="meal-img">
+                                            <img src="./images/menu/dessert/dess_6.jpg" alt="Barrel's Lunch">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8 col-sm-6">
+                                        <div class="meal-details">
+                                            <h2>Barrel's dessert</h2>
+                                            <p>There is a rich diversity in food</p>
+                                            <span>&#36; 15</span><button class="btn">Order</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+    <!--end menu-->
+
+    <!--start reservation-->
+    <section id="reservation" class="block reservation padding">
+        <div class="booking">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6 col-xs-12">
+                        <div class="booking-form">
+                            <div class="booking-intro">
+                                <h3 class="colored">reservation</h3>
+                                <h2 class="h1">choose your table</h2>
+                            </div>
+                            <form action="">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <input type="text" placeholder="First Name">
+                                            <input type="tel" placeholder="Phone No 1">
+                                            <input type="email" placeholder="Your Email">
+                                            <input type="date" placeholder="mm/dd/yyyy">
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <input type="text" placeholder="Last Name">
+                                            <input type="tel" placeholder="Phone No 2">
+                                            <input type="number" placeholder="Enter Table No">
+                                            <input type="time" placeholder="Enter Time">
+
+                                        </div>
+                                    </div>
+                                    <textarea name="" id="" cols="30" rows="7" placeholder="Your Message"></textarea>
+                                    <button class="btn">submit now</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="img-part1 col-md-6 col-xs-12">
+                        <div class="booking-img">
+                            <!----img src="../images/booking.jpg" alt="Booking"-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="testimonials">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="img-part2 col-md-6 col-xs-12">
+                        <div class="testimonials-img">
+
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xs-12">
+                        <div class="container-fluid">
+                            <div class="testimonials-text">
+                                <!--owl carousel-->
+                                <div class="wrapper">
+                                    <div id="testimonial" class="owl-testimonial owl-carousel owl-theme">
+                                        <div class="item">
+                                            <div class="testimonial">
+                                                <img src="./images/testimonial/jason.png" alt="">
+                                                <p>
+                                                    <i class="fa fa-quote-left"></i> Ristora is the place for a fine
+                                                    dining experience where the tradition is blended with an imaginative
+                                                    and modern twist. The foods of khadok restaurant are healthy &amp;
+                                                    testy. The pizza is exceptional.
+                                                </p>
+                                                <span>Thomas</span>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="testimonial">
+                                                <img src="./images/testimonial/tastimonials_1.jpg" alt="">
+                                                <p>
+                                                    <i class="fa fa-quote-left"></i> The foods of khadok restaurant are
+                                                    delicious. The pizza is delicious & spicy. Ristora is the place for
+                                                    a fine dining experience where the tradition is blended with an
+                                                    imaginative and modern twist.
+                                                </p>
+                                                <span>Jhons</span>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="testimonial">
+                                                <img src="./images/testimonial/tastimonials_3.jpg" alt="">
+                                                <p>
+                                                    <i class="fa fa-quote-left"></i> Ristora is the place for a fine
+                                                    dining experience where the tradition is blended with an imaginative
+                                                    and modern twist. The foods of khadok restaurant are healthy &
+                                                    testy. The pizza is exceptional.
+                                                </p>
+                                                <span>Kelvin</span>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="testimonial">
+                                                <img src="./images/testimonial/tastimonials_4-1.jpg" alt="">
+                                                <p>
+                                                    <i class="fa fa-quote-left"></i> The foods of khadok restaurant are
+                                                    delicious. The pizza is delicious & spicy. Ristora is the place for
+                                                    a fine dining experience where the tradition is blended with an
+                                                    imaginative and modern twist.
+                                                </p>
+                                                <span>Jhons</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--end reservation-->
+
+    <!--start team-->
+    <section class="team padding center">
+        <div class="container-fluid">
+            <div class="team-intro">
+                <h3 class="colored">meet</h3>
+                <h2 class="h1">our team</h2>
+            </div>
+            <div class="team-members">
+                <!--owl carousel-->
+                <div class="wrapper">
+                    <div id="team" class="owl-carousel owl-theme">
+                        <div class="item">
+                            <div class="team-member">
+                                <img src="./images/team/Chefs_1.png" alt="member">
+                                <h3>Halen Bord</h3>
+                                <span>chef</span>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="team-member">
+                                <img src="./images/team/waiter1.jpg" alt="member">
+                                <h3>Halen Bord</h3>
+                                <span>head waiters</span>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="team-member">
+                                <img src="./images/team/Chefs_2.png" alt="member">
+                                <h3>baba jadov</h3>
+                                <span>chef</span>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="team-member">
+                                <img src="./images/team/waiter2.jpg" alt="member">
+                                <h3>Halen Bord</h3>
+                                <span>waiter</span>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="team-member">
+                                <img src="./images/team/Chefs_3.png" alt="member">
+                                <h3>kavin anthoni</h3>
+                                <span>head chefs</span>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="team-member">
+                                <img src="./images/team/waiter4.jpg" alt="member">
+                                <h3>gayatri pall</h3>
+                                <span>waiter</span>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="team-member">
+                                <img src="./images/team/Chefs_4.png" alt="">
+                                <h3>anna taylor</h3>
+                                <span>chef</span>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="team-member">
+                                <img src="./images/team/waiter3.jpg" alt="member">
+                                <h3>Halen Bord</h3>
+                                <span>waiter</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--end team-->
+
+    <!--start contact-->
+    <section id="contact" class="block contact-us">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xl-auto col-xs-12">
+                    <div class="part hours">
+                        <h3 class="h1">opening hours</h3>
+                        <h5>Sunday – Thursday: <span>08AM – 10PM</span></h5>
+                        <h5>Friday – Saturday: <span>10AM–11:30PM</span></h5>
+                        <h5>Booking Time: <span>24/7 Hour</span>s</h5>
+                    </div>
+                </div>
+                <div class="col-xl-5 col-xs-12">
+                    <div class="part contact">
+                        <img src="./images/logo/logoDark.png" alt="logo" />
+                        <p>Bluesky is a restaurant, and coffee roastery located <br /> on a busy corner site in
+                            Farringdon’s Exmouth Market.</p>
+                        <div class="icons">
+                            <p class="icon address">
+                                <i class="fa fa-location"></i><span>503 Old Buffalo Street NY, 20</span>
+                            </p>
+                            <p class="icon phone">
+                                <i class="fa fa-phone fa-lg"></i><span>+0123-456-789</span>
+                            </p>
+                            <p class="icon email">
+                                <i class="fa fa-envelope"></i><span>bluesky@gmail.com</span>
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-xl-auto col-xs-12">
+                    <div class="part location">
+                        <h3 class="h1">Location</h3>
+                        <iframe src="" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--end contact-->
+
+    <!--scroll to top-->
+    <div class="top">
+        <i class="fa fa-chevron-up"></i>
+    </div>
+
+    <!-- start search-box -->
+    <div class="search-box">
+        <div class="inner">
+            <h2 class="center">Search For Meals</h2>
+            <form>
+                <div class="input-holder">
+                    <label for="price">Meal Price:</label>
+                    <input type="range" min="10" max="50" list="marks" name="price" id="price" />
+                    <datalist id="marks">
+                        <option value="10" label="$10">
+                        <option value="20" label="$20">
+                        <option value="30" label="$30">
+                        <option value="40" label="$40">
+                        <option value="50" label="$50">
+                    </datalist>
+                </div>
+                <div class="input-holder">
+                    <label for="name">Meal Contain:</label>
+                    <input type="text" name="name" id="name" />
+                </div>
+                <button type="submit" class="btn">Search</button>
+            </form>
+        </div>
+    </div>
+    <!-- end search-box -->
+
+    <!-- start login-box -->
+    <div class="login-box">
+        <div class="inner">
+            <h2 class="center">
+                <span class="select" data-class="login">Login</span> |
+                <span data-class="signup">Sign up</span>
+            </h2>
+            <!-- login form -->
+            <form class="login">
+                <div class="input-holder">
+                    <label for="email">Email: </label>
+                    <input type="email" name="email" id="email" placeholder="Type your email" required />
+                </div>
+                <div class="input-holder">
+                    <label for="password">Password: </label>
+                    <input type="password" name="password" id="password" placeholder="Type your password" required />
+                </div>
+                <button class="btn" type="submit">Login</button>
+                <a href="#" class="center">Forget Password</a>
+            </form>
+            <!-- sign up form -->
+            <form class="signup">
+                <div class="input-holder">
+                    <label for="first">First Name: </label>
+                    <input type="text" name="first" id="first" placeholder="Type your first name" required />
+                </div>
+                <div class="input-holder">
+                    <label for="last">Last Name: </label>
+                    <input type="text" name="last" id="last" placeholder="Type your last name" required />
+                </div>
+                <div class="input-holder">
+                    <label for="email">Email: </label>
+                    <input type="email" name="email" id="email" placeholder="Type your email" required />
+                </div>
+                <div class="input-holder">
+                    <label for="password">Password: </label>
+                    <input type="password" name="password" id="password" placeholder="Type your password" required />
+                </div>
+                <button class="btn" type="submit">Sign Up</button>
+            </form>
+        </div>
+    </div>
+    <!-- end login-box -->
+    <!--start footer-->
+    <footer>
+        <div class="container-fluid">
+            <div class="copy">
+                &copy; 2019 all rights reserved.
+            </div>
+            <div class="social">
+                <i class="fa fa-facebook fw"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-pinterest"></i>
+                <i class="fa fa-instagram"></i>
+            </div>
+        </div>
+    </footer>
+    <!--end footer-->
+</body>
+
+</html>
